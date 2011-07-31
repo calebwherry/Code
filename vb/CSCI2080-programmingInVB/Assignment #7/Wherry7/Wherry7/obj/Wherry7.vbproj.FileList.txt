@@ -1,0 +1,11 @@
+bin\Debug\Wherry7.exe
+bin\Debug\Wherry7.pdb
+bin\Debug\Wherry7.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Wherry7.bagelForm.resources
+obj\Debug\Wherry7.Resources.resources
+obj\Debug\Wherry7.vbproj.GenerateResource.Cache
+obj\Debug\Wherry7.exe
+obj\Debug\Wherry7.xml
+obj\Debug\Wherry7.pdb
+obj\Debug\Wherry7.AboutBox.resources

@@ -1,0 +1,5 @@
+C:\Documents and Settings\Caleb\My Documents\Documents\Business & School\APSU\Classes\Computer Science\CSCI 3005 - Object Oriented Programming\Assignments\Assignment #4\Wherry4\Wherry4\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Caleb\My Documents\Documents\Business & School\APSU\Classes\Computer Science\CSCI 3005 - Object Oriented Programming\Assignments\Assignment #4\Wherry4\Wherry4\bin\Debug\Wherry4.exe
+C:\Documents and Settings\Caleb\My Documents\Documents\Business & School\APSU\Classes\Computer Science\CSCI 3005 - Object Oriented Programming\Assignments\Assignment #4\Wherry4\Wherry4\bin\Debug\Wherry4.pdb
+C:\Documents and Settings\Caleb\My Documents\Documents\Business & School\APSU\Classes\Computer Science\CSCI 3005 - Object Oriented Programming\Assignments\Assignment #4\Wherry4\Wherry4\obj\Debug\Wherry4.exe
+C:\Documents and Settings\Caleb\My Documents\Documents\Business & School\APSU\Classes\Computer Science\CSCI 3005 - Object Oriented Programming\Assignments\Assignment #4\Wherry4\Wherry4\obj\Debug\Wherry4.pdb

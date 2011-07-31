@@ -1,0 +1,8 @@
+CREATE TRIGGER TRIG3 ON EMPLOYEE
+FOR DELETE
+AS
+IF (SELECT COUNT(DISTINCT(STORE_CODE)) FROM INSERTED) < 4
+  BEGIN
+  PRINT 'This store has been reduced to fewer than 4 employees. Consider revising.'
+  END 
+

@@ -1,0 +1,7 @@
+<html>
+<head>
+<Title> Hotel Reservation Java Applet </Title>
+</head><body>
+<applet code = "RectangleProgramA.class">
+</applet></body>
+</html>

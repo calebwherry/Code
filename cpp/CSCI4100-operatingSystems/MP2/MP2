@@ -1,0 +1,111 @@
+# Caleb Wherry
+# Machine Problem 2
+# 6/13/07
+
+echo
+
+if [ $# != 1 ]
+then
+  echo Invalid number of files!
+  exit
+else
+  if [ -f $1 ]
+  then
+    echo "File: $1"
+    echo 
+  else
+    echo "$1 is not valid!"
+    exit
+  fi
+fi
+
+a=`head -1 $1 | cut -c1-4`
+b=`head -2 $1 | tail -1 | cut -c1-6`
+c=`head -3 $1 | tail -1 | cut -c1-6`
+d=`head -4 $1 | tail -1 | cut -c1-9`
+
+declare -i count=0
+
+if [ $a = 'TO:' ]
+then
+  count=1
+else
+  echo "Keyword 'TO: ' in the file is not correct."
+fi
+
+if [ $b = 'FROM:' ]
+then
+  count=2
+else
+  echo "Keyword 'FROM: ' in the file is not correct."
+fi
+
+if [ $c = 'DATE:' ]
+then
+  count=3
+else
+  echo "Keyword 'DATE: ' in the file is not correct."
+fi
+
+if [ $d = 'SUBJECT:' ]
+then
+  count=4
+else
+  echo "Keyword 'SUBJECT: ' in the file is not correct."
+fi
+
+e=`head -1 $1 | egrep -c '[a-zA-Z0-9\._-]+@[a-zA-Z0-9\._-]+\.[a-zA-Z]{2,4}'`
+ee=`head -1 $1 | cut -c5`
+f=`head -3 $1 | tail -1 | egrep -c '[0-9]{4}$'`
+ff=`head -3 $1 | tail -1 | cut -c7`
+g=`head -4 $1 | tail -1 | cut -c10`
+gg=`head -4 $1 | tail -1 | grep -c '[-#]'`
+
+if [ $e = 0 ]
+then
+  echo "The 'TO' field does not contain a correct e-mail address (xxxx@xxxx.xxx)."
+else
+  count=5
+fi
+
+if [ -z $ee ]
+then
+  echo "The 'TO' field does not contain anything. Please add an e-mail address."
+else
+  count=6
+fi
+
+if [ $f = 0 ]
+then
+  echo "The 'DATE' field does not contain the correct date format (xx/xx/xxxx)."
+else
+  count=7
+fi
+
+if [ -z $ff ]
+then
+  echo "The 'DATE' field does not contain anything. Please enter a date."
+else
+  count=8
+fi
+
+if [ -z $g ]
+then
+  echo "The 'SUBJECT' field does not contain anything. Please add a subject."
+else
+  count=9
+fi
+
+if [ $gg = 0 ]
+then
+  count=10
+else
+  echo "The 'SUBJECT' field cannot contain the '-' or '#' characters."
+fi
+
+if [ $count = 10 ]
+then
+  echo "Success! This e-mail is formatted correctly!"
+fi
+
+echo

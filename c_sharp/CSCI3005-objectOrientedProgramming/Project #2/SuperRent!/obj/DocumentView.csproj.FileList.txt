@@ -1,0 +1,11 @@
+bin\Debug\DocumentView.exe
+bin\Debug\DocumentView.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DocumentView.Child.resources
+obj\Debug\DocumentView.OrderGridView.resources
+obj\Debug\DocumentView.OrderPrintPreview.resources
+obj\Debug\DocumentView.Parent.resources
+obj\Debug\DocumentView.Properties.Resources.resources
+obj\Debug\DocumentView.csproj.GenerateResource.Cache
+obj\Debug\DocumentView.exe
+obj\Debug\DocumentView.pdb

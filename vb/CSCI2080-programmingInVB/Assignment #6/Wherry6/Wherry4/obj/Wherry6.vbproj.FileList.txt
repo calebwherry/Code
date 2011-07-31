@@ -1,0 +1,12 @@
+bin\Debug\Wherry6.exe
+bin\Debug\Wherry6.pdb
+bin\Debug\Wherry6.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Wherry6.AboutBox1.resources
+obj\Debug\Wherry6.veryVeryBoardsForm.resources
+obj\Debug\Wherry6.Resources.resources
+obj\Debug\Wherry6.SplashScreen1.resources
+obj\Debug\Wherry6.vbproj.GenerateResource.Cache
+obj\Debug\Wherry6.exe
+obj\Debug\Wherry6.xml
+obj\Debug\Wherry6.pdb

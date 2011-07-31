@@ -1,0 +1,10 @@
+bin\Debug\Wherry1.exe
+bin\Debug\Wherry1.pdb
+bin\Debug\Wherry1.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Wherry1.Resources.resources
+obj\Debug\Wherry1.vbproj.GenerateResource.Cache
+obj\Debug\Wherry1.exe
+obj\Debug\Wherry1.xml
+obj\Debug\Wherry1.pdb
+obj\Debug\Wherry1.vbMailOrderForm.resources

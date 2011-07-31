@@ -1,0 +1,209 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1225E391-460B-43D7-BFEF-0105CB81CE7C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DocumentView</RootNamespace>
+    <AssemblyName>DocumentView</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddGameDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddGameDocument.Designer.cs">
+      <DependentUpon>AddGameDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMemberDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddMemberDocument.Designer.cs">
+      <DependentUpon>AddMemberDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMovieDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddMovieDocument.Designer.cs">
+      <DependentUpon>AddMovieDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Child.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child.Designer.cs">
+      <DependentUpon>Child.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbIO.cs" />
+    <Compile Include="Document.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="InventoryList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InventoryList.Designer.cs">
+      <DependentUpon>InventoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member.cs" />
+    <Compile Include="MemberList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MemberList.Designer.cs">
+      <DependentUpon>MemberList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movie.cs" />
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuperRent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperRent.Designer.cs">
+      <DependentUpon>SuperRent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddGameDocument.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddGameDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMemberDocument.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddMemberDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMovieDocument.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddMovieDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Child.resx">
+      <DependentUpon>Child.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryList.resx">
+      <DependentUpon>InventoryList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberList.resx">
+      <DependentUpon>MemberList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperRent.resx">
+      <DependentUpon>SuperRent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentDocument.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RentDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnDocument.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReturnDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TransactionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateGameDocument.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UpdateGameDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateMemberDocument.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UpdateMemberDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateMovieDocument.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UpdateMovieDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RentDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RentDocument.Designer.cs">
+      <DependentUpon>RentDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReturnDocument.Designer.cs">
+      <DependentUpon>ReturnDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction.cs" />
+    <Compile Include="TransactionList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TransactionList.Designer.cs">
+      <DependentUpon>TransactionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateGameDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpdateGameDocument.Designer.cs">
+      <DependentUpon>UpdateGameDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateMemberDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpdateMemberDocument.Designer.cs">
+      <DependentUpon>UpdateMemberDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateMovieDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpdateMovieDocument.Designer.cs">
+      <DependentUpon>UpdateMovieDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="video.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

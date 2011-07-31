@@ -1,0 +1,10 @@
+obj\Debug\HelloWorld.exe
+obj\Debug\HelloWorld.xml
+obj\Debug\HelloWorld.pdb
+bin\Debug\HelloWorld.exe
+bin\Debug\HelloWorld.pdb
+bin\Debug\HelloWorld.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\HelloWorld.helloForm.resources
+obj\Debug\HelloWorld.Resources.resources
+obj\Debug\HelloWorld.vbproj.GenerateResource.Cache
