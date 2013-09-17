@@ -100,7 +100,7 @@ PATH="$HOME/local/bin:$PATH"
 export PATH
 
 # Source git prompt:
-. /usr/share/git-core/contrib/completion/git-prompt.sh
+. ~/.git-prompt.sh
 
 #
 # Prompt:
