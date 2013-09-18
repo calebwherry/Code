@@ -163,11 +163,14 @@ fi
 
 function ii() # get current host related info
 {
-    echo -e "\nYou are logged on to: ${RED}$HOSTNAME"
-    echo -e "\nAdditionnal information: $NC" ; uname -a
-    echo -e "\n${RED}Users logged on: $NC" ; w -h
-    echo -e "\n${RED}Current date: $NC" ; date
-    echo -e "\n${RED}Machine stats: $NC" ; uptime
+		Red=$(tput setaf 1)
+		Color_Off=$(tput sgr0)
+
+    printf $Red"\nHostname: ${Color_Off}\n${HOSTNAME}\n"
+    printf $Red"\nAdditionnal information: "${Color_Off}"\n" ; uname -a
+    printf $Red"\nUsers logged on: "${Color_Off}"\n" ; w -h
+    printf $Red"\nCurrent date: "${Color_Off}"\n" ; date
+    printf $Red"\nMachine stats: "${Color_Off}"\n" ; uptime
     echo
 }
 
