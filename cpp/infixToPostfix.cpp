@@ -145,7 +145,7 @@ int main (int argc, char* argv[]) {
 
     if( token == '+' || token == '-' || token == '*' || token == '/' ) {
       
-      BinaryTree* tree = (BinaryTree*)malloc(sizeof(BinaryTree));
+      BinaryTree* tree = new BinaryTree();
 
       tree->data = token;
 
@@ -159,7 +159,7 @@ int main (int argc, char* argv[]) {
     }
     else {
 
-      BinaryTree* tree = (BinaryTree*)malloc(sizeof(BinaryTree));
+      BinaryTree* tree = new BinaryTree();
 
       tree->data = token;
       tree->left =  NULL;

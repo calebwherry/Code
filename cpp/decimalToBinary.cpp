@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <string>
-#include <Math.h>
+#include <math.h>
 
 using namespace std;
 
@@ -13,7 +13,6 @@ int main(int argc, char* argv[]) {
   string binary = "";
   int len = 0, decimal = 0, count = 0;
 
-  system("clear");
   cout << "Welcome to My Binary To Decimal Convertor" << endl;
   cout << "-----------------------------------------" << endl;
   cout << endl;
