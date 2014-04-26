@@ -1,5 +1,0 @@
-bin\Debug\VideoRental.exe
-bin\Debug\VideoRental.pdb
-obj\Debug\ResolveAssemblyReference.cache
-obj\Debug\VideoRental.exe
-obj\Debug\VideoRental.pdb
