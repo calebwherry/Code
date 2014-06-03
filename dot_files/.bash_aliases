@@ -19,6 +19,8 @@ alias sb='. ~/.bashrc'
 alias vi='vim'
 alias stamp='date "+%Y%m%d%a%H%M"'
 alias da='date "+%Y-%m-%d %A    %T %Z"'
+alias timeMe='/usr/bin/time -f "\nElapsed Time (s): %E\nUser (s): %U\nSystem (s): %S\nMemory (kB): %M\nExit Status: %x"'
+alias me='ps aux | grep $(whoami)'
 
 # SSH Machines:
-alias quasar='ssh cwherry@quasar.phys.vt.edu'
+####
