@@ -1,8 +1,11 @@
+colorscheme koehler
+syntax on
+"filetype on
+"au BufNewFile,BufRead *.hpp set filetype=cpp
+
 set nocompatible
 set showcmd
 set foldmethod=marker
-
-set background=dark
 
 set grepprg=grep\ -nH\ $*
 
