@@ -93,12 +93,10 @@ Jobs="\j"
 
 
 # Set dir color:
-LS_COLORS="$LS_COLORS:di=00;94"
-export LS_COLORS
+export LS_COLORS="$LS_COLORS:di=01;94"
 
 # Add $home/bin and bin/gnu to path:
-PATH="$HOME/local/bin:$PATH"
-export PATH
+export PATH="$HOME/local/bin:$PATH"
 
 # Source git prompt:
 . ~/.git-prompt.sh
