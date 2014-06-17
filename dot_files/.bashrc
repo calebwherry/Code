@@ -106,7 +106,7 @@ export PATH="$HOME/local/bin:$PATH"
 #		Source: http://mediadoneright.com/content/ultimate-git-ps1-bash-prompt
 #
 
-export PS1=$IBlack$Time12h$Color_Off'$(git branch &>/dev/null;\
+export PS1=$Yellow$Time12h$Color_Off'$(git branch &>/dev/null;\
 if [ $? -eq 0 ]; then \
 	echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
 	if [ "$?" -eq "0" ]; then \
