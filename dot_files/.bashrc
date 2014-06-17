@@ -95,8 +95,10 @@ Jobs="\j"
 # Set dir color:
 export LS_COLORS="$LS_COLORS:di=01;94"
 
-# Add $home/bin and bin/gnu to path:
-export PATH="$HOME/local/bin:$PATH"
+# Set editors:
+export GIT_EDITOR=vim
+export VISUAL=vim
+export EDITOR=vim
 
 # Source git prompt:
 . ~/.git-prompt.sh
