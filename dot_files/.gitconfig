@@ -9,7 +9,6 @@
 [push]
 	default = simple
 [status]
-	short = true
 	untracked-files = true
 	branch = true
 [core]
