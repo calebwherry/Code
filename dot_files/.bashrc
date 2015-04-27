@@ -65,7 +65,7 @@ if [ -f ~/.bash_functions ]; then
 fi
 
 # Git completion:
-if [ -f ~/.git_completion.sh ]; then
+if [ -f ~/.git-completion.sh ]; then
   . ~/.git-completion.sh
 fi
 
