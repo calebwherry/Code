@@ -6,8 +6,6 @@
 	diff = auto
 	status = auto
 	ui = true
-[push]
-	default = simple
 [status]
 	untracked-files = true
 	branch = true
